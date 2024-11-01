@@ -9,11 +9,14 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/buenard": "^0.2.3",
+    "@expo-google-fonts/emilys-candy": "^0.2.3",
     "@expo/metro-runtime": "~3.2.3",
     "@hookform/resolvers": "^3.9.0",
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/stack": "^6.4.1",
     "expo": "~51.0.28",
+    "expo-font": "~12.0.10",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

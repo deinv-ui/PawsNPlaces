@@ -63,7 +63,7 @@ export default function LoginScreen({ navigation }) {
           <Text style={styles.forgot}>Forgot your password ?</Text>
         </TouchableOpacity>
       </View>
-      <Button mode="contained" onPress={onLoginPressed}>
+      <Button mode="outlined" onPress={onLoginPressed}>
         Log in
       </Button>
       <View style={styles.row}>
@@ -80,6 +80,8 @@ export default function LoginScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   forgotPassword: {
+    color: theme.colors.black,
+    fontWeight: 500,
     width: "100%",
     alignItems: "flex-end",
     marginBottom: 10,

@@ -2,9 +2,10 @@ import React from "react";
 import { Provider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-
+import { useFonts } from 'expo-font';
 import { theme } from "./app/core/theme";
 import {
+  IntroScreen,
   StartScreen,
   LoginScreen,
   RegisterScreen,
@@ -19,11 +20,13 @@ export default function App() {
     <Provider theme={theme}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="StartScreen"
+          initialRouteName="IntroScreen"
           screenOptions={{
             headerShown: false,
           }}
         >
+          
+          <Stack.Screen name="PawNPlaces" component={IntroScreen} />
           <Stack.Screen name="StartScreen" component={StartScreen} />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />

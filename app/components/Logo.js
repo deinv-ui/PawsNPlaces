@@ -4,7 +4,7 @@ import { Image, StyleSheet } from "react-native";
 export default function Logo() {
   return (
     <Image
-      source={require("../../assets/items/logo.png")}
+      source={require("../../assets/items/pawnplaces_logo.svg")}
       style={styles.image}
     />
   );
@@ -12,8 +12,9 @@ export default function Logo() {
 
 const styles = StyleSheet.create({
   image: {
-    width: 110,
-    height: 110,
+    width: 200,
+    height: 220,
+    alignSelf: 'center',
     marginBottom: 8,
   },
 });
